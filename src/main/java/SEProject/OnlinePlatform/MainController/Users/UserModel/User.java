@@ -14,16 +14,27 @@ public class User {
     public String username ;
     public String password;
     public String type;
+    public boolean isActive;
 
 
     public User() {
     }
 
-    public User(int id, String username, String password, String type) {
+    public User(int id, String username, String password, String type,boolean isActive) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.type = type;
+        this.isActive= isActive;
+
+    }
+
+    public boolean getActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
     }
 
     public int getId() {
